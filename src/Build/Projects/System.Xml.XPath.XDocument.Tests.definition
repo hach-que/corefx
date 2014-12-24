@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Name="System.Xml.XPath.XDocument.Tests" Path="System.Xml.XPath.XDocument\tests" Type="Library" Platforms="Windows">
+  <Properties>
+    <FrameworkVersions>
+      <Platform Name="Linux">
+        <Version>v4.5</Version>
+      </Platform>
+    </FrameworkVersions>
+  </Properties>
+  <References>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.XDocument" />
+    <Reference Include="System.Xml.XmlDocument" />
+    <Reference Include="System.Xml.XPath" />
+    <Reference Include="System.Xml.XPath.XDocument" />
+    <Reference Include="System.Xml.XPath.XmlDocument" />
+    <Reference Include="XunitTraitsDiscoverers" />
+  </References>
+  <Files>
+    <None Include="packages.config" />
+    <Compile Include="XDocument\CreateNavigatorComparer.cs" />
+    <Compile Include="XDocument\NavigatorComparer.cs" />
+    <Compile Include="XDocument\CreateNavigatorFromXDocument.cs" />
+    <Compile Include="XDocument\XDocumentXPathTest.cs" />
+    <Compile Include="..\..\Common\tests\System.Xml.XPath\XmlDocument\CreateNavigatorFromXmlDocument.cs" />
+    <Compile Include="..\..\Common\tests\System.Xml.XPath\Common\FileHelper.cs" />
+    <Compile Include="..\..\Common\tests\System.Xml.XPath\Common\ICreateNavigator.cs" />
+    <Compile Include="..\..\Common\tests\System.Xml.XPath\Common\Utils.cs" />
+    <Compile Include="..\..\Common\tests\System.Xml.XPath\Common\XPathResult.cs" />
+    <Compile Include="..\..\Common\tests\System.Xml.XPath\Common\XPathResultToken.cs" />
+    <Compile Include="..\..\Common\tests\System.Xml.XPath\CoreFunctionLibrary\BooleanFunctionsTests.cs" />
+    <Compile Include="..\..\Common\tests\System.Xml.XPath\CoreFunctionLibrary\ComplexExpressionsTests.cs" />
+    <Compile Include="..\..\Common\tests\System.Xml.XPath\CoreFunctionLibrary\NodeSetFunctionsTests.cs" />
+    <Compile Include="..\..\Common\tests\System.Xml.XPath\CoreFunctionLibrary\NodeSetMatchesTests.cs" />
+    <Compile Include="..\..\Common\tests\System.Xml.XPath\CoreFunctionLibrary\NumberFunctionsTests.cs" />
+    <Compile Include="..\..\Common\tests\System.Xml.XPath\CoreFunctionLibrary\ParameterTypeCoercionTests.cs" />
+    <Compile Include="..\..\Common\tests\System.Xml.XPath\CoreFunctionLibrary\StringFunctionsTests.cs" />
+    <Compile Include="..\..\Common\tests\System.Xml.XPath\CustomerScenarios\CustomerScenariosTests.cs" />
+    <Compile Include="..\..\Common\tests\System.Xml.XPath\CustomerScenarios\MatchesTests.cs" />
+    <Compile Include="..\..\Common\tests\System.Xml.XPath\FuncExpressions\BasicMatchesTests.cs" />
+    <Compile Include="..\..\Common\tests\System.Xml.XPath\FuncExpressions\BasicsTests.cs" />
+    <Compile Include="..\..\Common\tests\System.Xml.XPath\FuncExpressions\BooleansTests.cs" />
+    <Compile Include="..\..\Common\tests\System.Xml.XPath\FuncExpressions\NodeSetsMatchesTests.cs" />
+    <Compile Include="..\..\Common\tests\System.Xml.XPath\FuncExpressions\NodeSetsTests.cs" />
+    <Compile Include="..\..\Common\tests\System.Xml.XPath\FuncExpressions\NumbersTests.cs" />
+    <Compile Include="..\..\Common\tests\System.Xml.XPath\FuncExpressions\SetContextFunctionalTests.cs" />
+    <Compile Include="..\..\Common\tests\System.Xml.XPath\FuncExpressions\SetContextMatchesTests.cs" />
+    <Compile Include="..\..\Common\tests\System.Xml.XPath\FuncLocation\PathAbbreviatedSyntaxMatchesTests.cs" />
+    <Compile Include="..\..\Common\tests\System.Xml.XPath\FuncLocation\PathAbbreviatedSyntaxTests.cs" />
+    <Compile Include="..\..\Common\tests\System.Xml.XPath\FuncLocation\PathAxeCombinationsTests.cs" />
+    <Compile Include="..\..\Common\tests\System.Xml.XPath\FuncLocation\PathAxeComplexExprMatchesTests.cs" />
+    <Compile Include="..\..\Common\tests\System.Xml.XPath\FuncLocation\PathAxeComplexExprTests.cs" />
+    <Compile Include="..\..\Common\tests\System.Xml.XPath\FuncLocation\PathAxeMatchesTests.cs" />
+    <Compile Include="..\..\Common\tests\System.Xml.XPath\FuncLocation\PathAxesTests.cs" />
+    <Compile Include="..\..\Common\tests\System.Xml.XPath\FuncLocation\PathNodeMatchesTests.cs" />
+    <Compile Include="..\..\Common\tests\System.Xml.XPath\FuncLocation\PathNodeTests.cs" />
+    <Compile Include="..\..\Common\tests\System.Xml.XPath\FuncLocation\PathPredicateComplexExprTests.cs" />
+    <Compile Include="..\..\Common\tests\System.Xml.XPath\FuncLocation\PathPredicateMatchesTests.cs" />
+    <Compile Include="..\..\Common\tests\System.Xml.XPath\FuncLocation\PathPredicatePositionTests.cs" />
+    <Compile Include="..\..\Common\tests\System.Xml.XPath\FuncLocation\PathPredicatesTests.cs" />
+    <Compile Include="..\..\Common\tests\System.Xml.XPath\FuncLocation\StepMatchesTests.cs" />
+    <Compile Include="..\..\Common\tests\System.Xml.XPath\FuncLocation\StepsTests.cs" />
+    <Compile Include="..\..\Common\tests\System.Xml.XPath\MiscellaneousCases\GlobalizationTests.cs" />
+    <Compile Include="..\..\Common\tests\System.Xml.XPath\MiscellaneousCases\LexicalStructureTests.cs" />
+    <Compile Include="..\..\Common\tests\System.Xml.XPath\MiscellaneousCases\MatchesTests.cs" />
+    <Compile Include="..\..\Common\tests\System.Xml.XPath\MiscellaneousCases\MiscellaneousCasesTests.cs" />
+    <Compile Include="..\..\Common\tests\System.Xml.XPath\MiscellaneousCases\NodeSetsTests.cs" />
+    <Compile Include="..\..\Common\tests\System.Xml.XPath\MiscellaneousCases\RegressionTestsTests.cs" />
+    <Compile Include="..\..\Common\tests\System.Xml.XPath\TestsWithEncoding\MiscWithEncodings.cs" />
+    <Compile Include="..\..\Common\tests\System.Xml.XPath\XPathExpressionTests\CompileTests.cs" />
+    <Compile Include="..\..\Common\tests\System.Xml.XPath\XPathExpressionTests\EvaluateTests.cs" />
+    <EmbeddedResource Include="..\..\Common\tests\System.Xml.XPath\TestData\91893.xml">
+      <Link>TestData\91893.xml</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Common\tests\System.Xml.XPath\TestData\JPN_problem_chars_1.xml">
+      <Link>TestData\JPN_problem_chars_1.xml</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Common\tests\System.Xml.XPath\TestData\JPN_problem_chars_2.xml">
+      <Link>TestData\JPN_problem_chars_2.xml</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Common\tests\System.Xml.XPath\TestData\KOR_problem_chars_b.xml">
+      <Link>TestData\KOR_problem_chars_b.xml</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Common\tests\System.Xml.XPath\TestData\Russian_problem_chars.xml">
+      <Link>TestData\Russian_problem_chars.xml</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Common\tests\System.Xml.XPath\TestData\Single_byte_problem_chars_b.xml">
+      <Link>TestData\Single_byte_problem_chars_b.xml</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Common\tests\System.Xml.XPath\TestData\Surrogates_1.xml">
+      <Link>TestData\Surrogates_1.xml</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Common\tests\System.Xml.XPath\TestData\Thai_risky_chars.xml">
+      <Link>TestData\Thai_risky_chars.xml</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Common\tests\System.Xml.XPath\TestData\XQL_Orders_j1.xml">
+      <Link>TestData\XQL_Orders_j1.xml</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Common\tests\System.Xml.XPath\TestData\XQL_Orders_j3.xml">
+      <Link>TestData\XQL_Orders_j3.xml</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Common\tests\System.Xml.XPath\TestData\xql_orders-flat-200a.xml">
+      <Link>TestData\xql_orders-flat-200a.xml</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Common\tests\System.Xml.XPath\TestData\books.xml">
+      <Link>TestData\books.xml</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Common\tests\System.Xml.XPath\TestData\books_2.xml">
+      <Link>TestData\books_2.xml</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Common\tests\System.Xml.XPath\TestData\bookstore.xml">
+      <Link>TestData\bookstore.xml</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Common\tests\System.Xml.XPath\TestData\data.xml">
+      <Link>TestData\data.xml</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Common\tests\System.Xml.XPath\TestData\data1.xml">
+      <Link>TestData\data1.xml</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Common\tests\System.Xml.XPath\TestData\data4.xml">
+      <Link>TestData\data4.xml</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Common\tests\System.Xml.XPath\TestData\dummy.xml">
+      <Link>TestData\dummy.xml</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Common\tests\System.Xml.XPath\TestData\id4.xml">
+      <Link>TestData\id4.xml</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Common\tests\System.Xml.XPath\TestData\lang.xml">
+      <Link>TestData\lang.xml</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Common\tests\System.Xml.XPath\TestData\name.xml">
+      <Link>TestData\name.xml</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Common\tests\System.Xml.XPath\TestData\name2.xml">
+      <Link>TestData\name2.xml</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Common\tests\System.Xml.XPath\TestData\name4.xml">
+      <Link>TestData\name4.xml</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Common\tests\System.Xml.XPath\TestData\namespaces.xml">
+      <Link>TestData\namespaces.xml</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Common\tests\System.Xml.XPath\TestData\ns_default.xml">
+      <Link>TestData\ns_default.xml</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Common\tests\System.Xml.XPath\TestData\ns_prefixes.xml">
+      <Link>TestData\ns_prefixes.xml</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Common\tests\System.Xml.XPath\TestData\numbers.xml">
+      <Link>TestData\numbers.xml</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Common\tests\System.Xml.XPath\TestData\space.xml">
+      <Link>TestData\space.xml</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Common\tests\System.Xml.XPath\TestData\t114730.xml">
+      <Link>TestData\t114730.xml</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Common\tests\System.Xml.XPath\TestData\t98598.xml">
+      <Link>TestData\t98598.xml</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Common\tests\System.Xml.XPath\TestData\test1.xml">
+      <Link>TestData\test1.xml</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Common\tests\System.Xml.XPath\TestData\test63682.xml">
+      <Link>TestData\test63682.xml</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Common\tests\System.Xml.XPath\TestData\test63733.xml">
+      <Link>TestData\test63733.xml</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Common\tests\System.Xml.XPath\TestData\test66246.xml">
+      <Link>TestData\test66246.xml</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Common\tests\System.Xml.XPath\TestData\turkish.xml">
+      <Link>TestData\turkish.xml</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Common\tests\System.Xml.XPath\TestData\xp001.xml">
+      <Link>TestData\xp001.xml</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Common\tests\System.Xml.XPath\TestData\xp002.xml">
+      <Link>TestData\xp002.xml</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Common\tests\System.Xml.XPath\TestData\xp003.xml">
+      <Link>TestData\xp003.xml</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Common\tests\System.Xml.XPath\TestData\xp004.xml">
+      <Link>TestData\xp004.xml</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Common\tests\System.Xml.XPath\TestData\xp005.xml">
+      <Link>TestData\xp005.xml</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Common\tests\System.Xml.XPath\TestData\xp006.xml">
+      <Link>TestData\xp006.xml</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Common\tests\System.Xml.XPath\TestData\xp008.xml">
+      <Link>TestData\xp008.xml</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Common\tests\System.Xml.XPath\TestData\xp012.xml">
+      <Link>TestData\xp012.xml</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Common\tests\System.Xml.XPath\TestData\xpC001.xml">
+      <Link>TestData\xpC001.xml</Link>
+    </EmbeddedResource>
+  </Files>
+</Project>
