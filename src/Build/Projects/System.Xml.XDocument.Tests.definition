@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Name="System.Xml.XDocument.Tests" Path="System.Xml.XDocument\tests" Type="Library" Platforms="Windows">
+  <Properties>
+    <FrameworkVersions>
+      <Platform Name="Linux">
+        <Version>v4.5</Version>
+      </Platform>
+    </FrameworkVersions>
+  </Properties>
+  <References>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.XDocument" />
+    <Reference Include="XunitTraitsDiscoverers" />
+  </References>
+  <Files>
+    <None Include="packages.config" />
+    <Compile Include="Common\HelperExtensionMethods.cs" />
+    <Compile Include="axes\AxisOrderValidation.cs" />
+    <Compile Include="axes\TestData.cs" />
+    <Compile Include="axes\InvalidParamValidation.cs" />
+    <None Include="packages.config" />
+  </Files>
+</Project>
