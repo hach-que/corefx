@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Name="Microsoft.Win32.Primitives" Path="Microsoft.Win32.Primitives\src" Type="Library">
+  <Properties>
+    <FrameworkVersions>
+      <Platform Name="Linux">
+        <Version>v4.5</Version>
+      </Platform>
+    </FrameworkVersions>
+  </Properties>
+  <References />
+  <Files>
+    <Compile Include="Interop\Interop.cs" />
+    <Compile Include="System\ComponentModel\Win32Exception.cs" />
+    <Compile Include="Interop\Interop.Windows.cs">
+      <Platforms>Windows</Platforms>
+    </Compile>
+    <Compile Include="System\ComponentModel\Win32Exception.Windows.cs">
+      <Platforms>Windows</Platforms>
+    </Compile>
+    <Compile Include="..\..\Common\src\Interop\Interop.strerror.Unix.cs">
+      <Platforms>Linux</Platforms>
+    </Compile>
+    <Compile Include="Interop\Interop.Unix.cs">
+      <Platforms>Linux</Platforms>
+    </Compile>
+    <Compile Include="System\ComponentModel\Win32Exception.Unix.cs">
+      <Platforms>Linux</Platforms>
+    </Compile>
+    <None Include="packages.config" />
+  </Files>
+</Project>

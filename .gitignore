@@ -235,3 +235,10 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# Generated solutions
+*.Windows.sln*
+*.Linux.sln*
+*.Windows.csproj*
+*.Linux.csproj*
+*.speccache
