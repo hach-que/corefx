@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Name="System.Diagnostics.FileVersionInfo.Tests" Path="System.Diagnostics.FileVersionInfo\tests" Type="Library" Platforms="Windows">
+  <Properties>
+    <FrameworkVersions>
+      <Platform Name="Linux">
+        <Version>v4.5</Version>
+        <Profile>Profile7</Profile>
+      </Platform>
+    </FrameworkVersions>
+  </Properties>
+  <References>
+    <Reference Include="System.Diagnostics.FileVersionInfo" />
+    <Reference Include="Assembly1" />
+  </References>
+  <Files>
+    <Content Include="NativeConsoleApp.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="NativeLibrary.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SecondNativeLibrary.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assembly1.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Compile Include="FileVersionInfoTest.cs" />
+  </Files>
+</Project>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Name="System.Diagnostics.FileVersionInfo" Path="System.Diagnostics.FileVersionInfo\src" Type="Library">
+  <Properties>
+    <FrameworkVersions>
+      <Platform Name="Linux">
+        <Version>v4.5</Version>
+      </Platform>
+    </FrameworkVersions>
+  </Properties>
+  <References>
+    <Reference Include="System" />
+  </References>
+  <Files>
+    <Compile Include="System\Diagnostics\FileVersionInfo.cs" />
+    <Compile Include="Interop\Interop.manual.cs" />
+    <None Include="packages.config" />
+  </Files>
+</Project>

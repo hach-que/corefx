@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Name="Assembly1" Path="System.Diagnostics.FileVersionInfo\tests" Type="Library">
+  <Properties>
+    <FrameworkVersions>
+      <Platform Name="Linux">
+        <Version>v4.5</Version>
+      </Platform>
+    </FrameworkVersions>
+  </Properties>
+  <References>
+    <Reference Include="System" />
+  </References>
+  <Files>
+    <Compile Include="Assembly1.cs" />
+    <None Include="packages.Assembly1.config" />
+  </Files>
+</Project>
