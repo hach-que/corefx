@@ -1,48 +1,17 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), dir.props))\dir.props" />
-  <PropertyGroup>
-    <Configuration Condition="'$(Configuration)' == ''">Debug</Configuration>
-    <Platform Condition="'$(Platform)' == ''">AnyCPU</Platform>
-    <ProjectGuid>{7061832A-E8CF-4AB6-A8DC-44D2F5A43A13}</ProjectGuid>
-    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <OutputType>Library</OutputType>
-    <AssemblyName>System.Reflection.Metadata.Tests</AssemblyName>
-    <RootNamespace>System.Reflection.Metadata.Tests</RootNamespace>
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <FileAlignment>512</FileAlignment>
-    <ExternallyShipping>false</ExternallyShipping>
-    <NuGetPackageImportStamp>83230753</NuGetPackageImportStamp>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <!-- References are resolved from packages.config -->
-  <ItemGroup>
-    <ProjectReference Include="..\..\Common\tests\XunitTraitsDiscoverers\XunitTraitsDiscoverers.csproj">
-      <Project>{be8ed8c1-c314-4c4e-a929-64c9c8b3552a}</Project>
-      <Name>XunitTraitsDiscoverers</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\src\System.Reflection.Metadata.csproj">
-      <Project>{f3e433c8-352f-4944-bf7f-765ce435370d}</Project>
-      <Name>System.Reflection.Metadata</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
+<?xml version="1.0" encoding="utf-8"?>
+<Project Name="System.Reflection.Metadata.Tests" Path="System.Reflection.Metadata\tests" Type="Library" Platforms="Windows">
+  <Properties>
+    <FrameworkVersions>
+      <Platform Name="Linux">
+        <Version>v4.5</Version>
+      </Platform>
+    </FrameworkVersions>
+  </Properties>
+  <References>
+    <Reference Include="XunitTraitsDiscoverers" />
+    <Reference Include="System.Reflection.Metadata" />
+  </References>
+  <Files>
     <Compile Include="Metadata\ClassLayoutRow.cs" />
     <Compile Include="Metadata\Ecma335\MetadataAggregatorTests.cs" />
     <Compile Include="Metadata\Ecma335\MetadataTokensTests.cs" />
@@ -63,8 +32,6 @@
     <Compile Include="Utilities\CompressedIntegerTests.cs" />
     <Compile Include="Utilities\ImmutableByteArrayInteropTest.cs" />
     <Compile Include="Utilities\MemoryBlockTests.cs" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Namespace\NamespaceForwardedCS.cs" />
     <None Include="Resources\Namespace\NamespaceTests.cs" />
     <None Include="Resources\Interop\Interop.Mock01.cs" />
@@ -89,12 +56,6 @@
     <EmbeddedResource Include="Resources\NetModule\ModuleCS01.mod" />
     <EmbeddedResource Include="Resources\NetModule\ModuleVB01.mod" />
     <None Include="Resources\NetModule\ModuleVB01.vb" />
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="packages.config" />
-  </ItemGroup>
-  <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), dir.targets))\dir.targets" />
+  </Files>
 </Project>
