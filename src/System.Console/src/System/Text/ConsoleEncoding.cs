@@ -19,7 +19,7 @@ namespace System.Text
 
         public override byte[] GetPreamble()
         {
-            return Array.Empty<byte>();
+            return new byte[0];
         }
 
         public override string WebName
