@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Name="System.Linq.Parallel.Tests" Path="System.Linq.Parallel\tests" Type="Library" Platforms="Windows">
+  <Properties>
+    <FrameworkVersions>
+      <Platform Name="Linux">
+        <Version>v4.5</Version>
+      </Platform>
+    </FrameworkVersions>
+  </Properties>
+  <References>
+    <Reference Include="System" />
+    <Reference Include="System.Linq.Parallel" />
+    <Reference Include="XunitTraitsDiscoverers" />
+  </References>
+  <Files>
+    <Compile Include="AggregateTests.cs" />
+    <Compile Include="AllAnyTests.cs" />
+    <Compile Include="AverageMaxMinTests.cs" />
+    <Compile Include="CastOfTypeTests.cs" />
+    <Compile Include="ContainsTests.cs" />
+    <Compile Include="CountTests.cs" />
+    <Compile Include="DegreeOfParallelismTests.cs" />
+    <Compile Include="ElementAtPartitionerTests.cs" />
+    <Compile Include="ExceptConcatReverseTests.cs" />
+    <Compile Include="ExceptionAndParallelEnumerableExceptionTests.cs" />
+    <Compile Include="ExchangeTests.cs" />
+    <Compile Include="FirstLastSingleDefaultIfEmptyTests.cs" />
+    <Compile Include="ForAllTests.cs" />
+    <Compile Include="GroupByTests.cs" />
+    <Compile Include="OrderByTests.cs" />
+    <Compile Include="ParallelQueryTests.cs" />
+    <Compile Include="PlinqDelegateExceptions.cs" />
+    <Compile Include="PlinqModesTests.cs" />
+    <Compile Include="RangeRepeatTests.cs" />
+    <Compile Include="SelectSelectManyTests.cs" />
+    <Compile Include="SequenceEqualTests.cs" />
+    <Compile Include="SumTests.cs" />
+    <Compile Include="TakeSkipTests.cs" />
+    <Compile Include="TakeWhileSkipWhileTests.cs" />
+    <Compile Include="ThenByTests.cs" />
+    <Compile Include="ToArrayToDictionaryToLookupTests.cs" />
+    <Compile Include="UnionIntersectDistinctTests.cs" />
+    <Compile Include="WhereTests.cs" />
+    <Compile Include="WithCancellationTests.cs" />
+    <Compile Include="ZipJoinGroupJoinTests.cs" />
+    <Compile Include="..\..\Common\tests\System\Console.cs" />
+  </Files>
+</Project>
