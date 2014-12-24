@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Name="XunitTraitsDiscoverers" Path="Common\tests\XunitTraitsDiscoverers" Type="Library" Platforms="Windows">
+  <Properties>
+    <FrameworkVersions>
+      <Platform Name="Linux">
+        <Version>v4.5</Version>
+      </Platform>
+    </FrameworkVersions>
+  </Properties>
+  <References />
+  <Files>
+    <None Include="packages.config" />
+    <Compile Include="ActiveIssueAttribute.cs" />
+    <Compile Include="ActiveIssueDiscoverer.cs" />
+    <Compile Include="OuterLoopAttribute.cs" />
+    <Compile Include="OuterLoopTestsDiscoverer.cs" />
+  </Files>
+</Project>

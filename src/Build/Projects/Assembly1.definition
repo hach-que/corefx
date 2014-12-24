@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project Name="Assembly1" Path="System.Diagnostics.FileVersionInfo\tests" Type="Library">
+<Project Name="Assembly1" Path="System.Diagnostics.FileVersionInfo\tests" Type="Library" Platforms="Windows">
   <Properties>
     <FrameworkVersions>
       <Platform Name="Linux">
