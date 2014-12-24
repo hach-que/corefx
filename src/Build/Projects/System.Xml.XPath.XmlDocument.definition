@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Name="System.Xml.XPath.XmlDocument" Path="System.Xml.XPath.XmlDocument\src" Type="Library" Platforms="Windows">
+  <Properties>
+    <FrameworkVersions>
+      <Platform Name="Linux">
+        <Version>v4.5</Version>
+      </Platform>
+    </FrameworkVersions>
+  </Properties>
+  <References>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.XmlDocument" />
+    <Reference Include="System.Xml.XPath" />
+  </References>
+  <Files>
+    <Compile Include="..\..\Common\src\System\Xml\Schema\XmlUntypedConverter.cs" />
+    <Compile Include="..\..\Common\src\System\Xml\Schema\XsdDateTime.cs" />
+    <Compile Include="..\..\Common\src\System\Xml\Base64Encoder.cs" />
+    <Compile Include="..\..\Common\src\System\Xml\Bits.cs" />
+    <Compile Include="..\..\Common\src\System\Xml\Ref.cs" />
+    <Compile Include="..\..\Common\src\System\Xml\XmlRawWriter.cs" />
+    <Compile Include="..\..\Common\src\System\Xml\SecureStringHasher.cs" />
+    <Compile Include="..\..\Common\src\System\Xml\XmlRawWriterBase64Encoder.cs" />
+    <Compile Include="..\..\Common\src\System\Xml\ValidateNames.cs" />
+    <Compile Include="..\..\Common\src\System\Xml\XmlCharType.cs" />
+    <Compile Include="..\..\Common\src\System\Xml\XmlStandalone.cs" />
+    <Compile Include="..\..\Common\src\System\Xml\XmlConvertEx.cs" />
+    <Compile Include="..\..\Common\src\System\Xml\ExceptionType.cs" />
+    <Compile Include="..\..\Common\src\System\Xml\XPathNavigatorEx.cs" />
+    <Compile Include="..\..\Common\src\System\Xml\XmlParsingHelper.cs" />
+    <Compile Include="..\..\Common\src\System\Xml\XmlAttributeCollectionEx.cs" />
+    <Compile Include="..\..\Common\src\System\Xml\XmlConst.cs" />
+    <Compile Include="..\..\Common\src\System\SR.cs">
+      <Link>Resources\SR.cs</Link>
+    </Compile>
+    <Compile Include="Resources\Strings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="System\Xml\XmlAttributeEx.cs" />
+    <Compile Include="System\Xml\XmlDocumentEx.cs" />
+    <Compile Include="System\Xml\XmlNodeEx.cs" />
+    <Compile Include="System\Xml\XmlWellformedWriter.cs" />
+    <Compile Include="System\Xml\XmlWellformedWriterHelpers.cs" />
+    <Compile Include="System\Xml\XPath\DocumentXmlWriter.cs" />
+    <Compile Include="System\Xml\XPath\DocumentXPathNavigator.cs" />
+    <Compile Include="System\Xml\XPath\XmlDocumentExtensions.cs" />
+    <Compile Include="System\Xml\XPath\XPathNodeList.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="..\..\Common\src\System\ArrayT.cs" />
+    <Compile Include="..\..\Common\src\System\NotImplemented.cs" />
+    <EmbeddedResource Include="Resources\Strings.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Strings.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Resources</CustomToolNamespace>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+  </Files>
+</Project>

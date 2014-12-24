@@ -1,44 +1,37 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
-  <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), dir.props))\dir.props" />
-  <PropertyGroup>
-    <Configuration Condition="'$(Configuration)' == ''">Debug</Configuration>
-    <Platform Condition="'$(Platform)' == ''">AnyCPU</Platform>
-    <ProjectGuid>{BE28323E-327A-4E0F-B7F9-16AB7EAB59DD}</ProjectGuid>
-    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <OutputType>Library</OutputType>
-    <AssemblyName>System.Xml.XPath</AssemblyName>
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-  </PropertyGroup>
-  <!-- Default configurations to help VS understand the configurations -->
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-  </PropertyGroup>
-  <!-- References are resolved from packages.config -->
-  <ItemGroup>
-    <Compile Include="$(CommonPath)\System\Xml\Base64Decoder.cs" />
-    <Compile Include="$(CommonPath)\System\Xml\Base64Encoder.cs" />
-    <Compile Include="$(CommonPath)\System\Xml\XmlRawWriterBase64Encoder.cs" />
-    <Compile Include="$(CommonPath)\System\Xml\BinHexDecoder.cs" />
-    <Compile Include="$(CommonPath)\System\Xml\Bits.cs" />
-    <Compile Include="$(CommonPath)\System\Xml\ValidateNames.cs" />
-    <Compile Include="$(CommonPath)\System\Xml\XmlCharType.cs" />
-    <Compile Include="$(CommonPath)\System\Xml\XmlConvertEx.cs" />
-    <Compile Include="$(CommonPath)\System\Xml\ExceptionType.cs" />
-    <Compile Include="$(CommonPath)\System\Xml\XmlReaderExtensions.cs" />
-    <Compile Include="$(CommonPath)\System\Xml\XmlWriterExtensions.cs" />
-    <Compile Include="$(CommonPath)\System\Xml\IncrementalReadDecoders.cs" />
-    <Compile Include="$(CommonPath)\System\Xml\ReadContentAsBinaryHelper.cs" />
-    <Compile Include="$(CommonPath)\System\Xml\XmlRawWriter.cs" />
-    <Compile Include="$(CommonPath)\System\Xml\XmlStandalone.cs" />
-    <Compile Include="$(CommonPath)\System\Xml\XmlConst.cs" />
-    <Compile Include="$(CommonPath)\System\Xml\Schema\XmlUntypedConverter.cs" />
-    <Compile Include="$(CommonPath)\System\Xml\Schema\XsdDateTime.cs" />
-    <Compile Include="$(CommonPath)\System\Xml\XPathNavigatorEx.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="$(CommonPath)\System\SR.cs">
+<?xml version="1.0" encoding="utf-8"?>
+<Project Name="System.Xml.XPath" Path="System.Xml.XPath\src" Type="Library">
+  <Properties>
+    <FrameworkVersions>
+      <Platform Name="Linux">
+        <Version>v4.5</Version>
+      </Platform>
+    </FrameworkVersions>
+  </Properties>
+  <References>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+  </References>
+  <Files>
+    <Compile Include="..\..\Common\src\System\Xml\Base64Decoder.cs" />
+    <Compile Include="..\..\Common\src\System\Xml\Base64Encoder.cs" />
+    <Compile Include="..\..\Common\src\System\Xml\XmlRawWriterBase64Encoder.cs" />
+    <Compile Include="..\..\Common\src\System\Xml\BinHexDecoder.cs" />
+    <Compile Include="..\..\Common\src\System\Xml\Bits.cs" />
+    <Compile Include="..\..\Common\src\System\Xml\ValidateNames.cs" />
+    <Compile Include="..\..\Common\src\System\Xml\XmlCharType.cs" />
+    <Compile Include="..\..\Common\src\System\Xml\XmlConvertEx.cs" />
+    <Compile Include="..\..\Common\src\System\Xml\ExceptionType.cs" />
+    <Compile Include="..\..\Common\src\System\Xml\XmlReaderExtensions.cs" />
+    <Compile Include="..\..\Common\src\System\Xml\XmlWriterExtensions.cs" />
+    <Compile Include="..\..\Common\src\System\Xml\IncrementalReadDecoders.cs" />
+    <Compile Include="..\..\Common\src\System\Xml\ReadContentAsBinaryHelper.cs" />
+    <Compile Include="..\..\Common\src\System\Xml\XmlRawWriter.cs" />
+    <Compile Include="..\..\Common\src\System\Xml\XmlStandalone.cs" />
+    <Compile Include="..\..\Common\src\System\Xml\XmlConst.cs" />
+    <Compile Include="..\..\Common\src\System\Xml\Schema\XmlUntypedConverter.cs" />
+    <Compile Include="..\..\Common\src\System\Xml\Schema\XsdDateTime.cs" />
+    <Compile Include="..\..\Common\src\System\Xml\XPathNavigatorEx.cs" />
+    <Compile Include="..\..\Common\src\System\SR.cs">
       <Link>Resources\SR.cs</Link>
     </Compile>
     <Compile Include="Resources\Strings.Designer.cs">
@@ -132,20 +125,13 @@
     <Compile Include="System\Xml\XPath\XPathNodeType.cs" />
     <Compile Include="System\Xml\Xsl\XsltContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="$(CommonPath)\System\ArrayT.cs" />
-    <Compile Include="$(CommonPath)\System\NotImplemented.cs" />
-  </ItemGroup>
-  <ItemGroup>
+    <Compile Include="..\..\Common\src\System\ArrayT.cs" />
+    <Compile Include="..\..\Common\src\System\NotImplemented.cs" />
     <EmbeddedResource Include="Resources\Strings.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Strings.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="packages.config" />
-  </ItemGroup>
-  <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), dir.targets))\dir.targets" />
+  </Files>
 </Project>
