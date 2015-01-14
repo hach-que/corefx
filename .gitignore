@@ -239,6 +239,8 @@ Temporary Items
 # Generated solutions
 *.Windows.sln*
 *.Linux.sln*
+*.PCL.sln*
 *.Windows.csproj*
 *.Linux.csproj*
+*.PCL.csproj*
 *.speccache

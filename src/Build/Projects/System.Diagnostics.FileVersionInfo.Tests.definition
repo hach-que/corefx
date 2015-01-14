@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project Name="System.Diagnostics.FileVersionInfo.Tests" Path="System.Diagnostics.FileVersionInfo\tests" Type="Library" Platforms="Windows">
+<Project Name="System.Diagnostics.FileVersionInfo.Tests" Path="System.Diagnostics.FileVersionInfo\tests" Type="Library" Platforms="Windows,PCL">
   <Properties>
     <FrameworkVersions>
       <Platform Name="Linux">
         <Version>v4.5</Version>
-        <Profile>Profile7</Profile>
+      </Platform>
+      <Platform Name="Windows">
+        <Version>v4.5</Version>
+		<Profile>Profile7</Profile>
+      </Platform>
+      <Platform Name="PCL">
+        <Version>v4.5</Version>
+		<Profile>Profile7</Profile>
       </Platform>
     </FrameworkVersions>
   </Properties>

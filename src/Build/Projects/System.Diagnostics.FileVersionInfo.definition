@@ -5,6 +5,14 @@
       <Platform Name="Linux">
         <Version>v4.5</Version>
       </Platform>
+      <Platform Name="Windows">
+        <Version>v4.5</Version>
+		<Profile>Profile7</Profile>
+      </Platform>
+      <Platform Name="PCL">
+        <Version>v4.5</Version>
+		<Profile>Profile7</Profile>
+      </Platform>
     </FrameworkVersions>
   </Properties>
   <References>

@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project Name="System.Threading.Tasks.Dataflow" Path="System.Threading.Tasks.Dataflow\src" Type="Library" Platforms="Windows">
+<Project Name="System.Threading.Tasks.Dataflow" Path="System.Threading.Tasks.Dataflow\src" Type="Library" Platforms="Windows,PCL">
   <Properties>
     <FrameworkVersions>
       <Platform Name="Linux">
         <Version>v4.5</Version>
+      </Platform>
+      <Platform Name="Windows">
+        <Version>v4.5</Version>
+		<Profile>Profile7</Profile>
+      </Platform>
+      <Platform Name="PCL">
+        <Version>v4.5</Version>
+		<Profile>Profile7</Profile>
       </Platform>
     </FrameworkVersions>
   </Properties>
@@ -50,7 +58,7 @@
       <DependentUpon>Strings.resx</DependentUpon>
     </Compile>
     <None Include="XmlDocs\CommonXmlDocComments.xml" />
-    <Content Include="XmlDocs\System.Threading.Tasks.Dataflow.xml">
+    <Content Include="XmlDocs\System.Threading.Tasks.Dataflow.xml" />
     <EmbeddedResource Include="Resources\Strings.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Strings.Designer.cs</LastGenOutput>
