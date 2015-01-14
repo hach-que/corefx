@@ -12,7 +12,7 @@
   </References>
   <Files>
     <Compile Include="System\Diagnostics\FileVersionInfo.cs" />
-    <Compile Include="Interop\Interop.manual.cs" />
+    <Compile Include="Interop\Interop.Windows.cs" />
     <None Include="packages.config" />
   </Files>
 </Project>

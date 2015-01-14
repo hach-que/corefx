@@ -50,7 +50,7 @@
       <DependentUpon>Strings.resx</DependentUpon>
     </Compile>
     <None Include="XmlDocs\CommonXmlDocComments.xml" />
-    <Content Include="XmlDocs\System.Threading.Tasks.Dataflow.xml">
+    <Content Include="XmlDocs\System.Threading.Tasks.Dataflow.xml" />
     <EmbeddedResource Include="Resources\Strings.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Strings.Designer.cs</LastGenOutput>
