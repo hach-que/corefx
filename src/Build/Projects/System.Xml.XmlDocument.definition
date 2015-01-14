@@ -12,6 +12,7 @@
     <Reference Include="System.Xml" />
   </References>
   <Files>
+    <Compile Include="..\..\Common\src\System\IO\StringBuilderCache.cs" />
     <Compile Include="..\..\Common\src\System\Xml\Ref.cs" />
     <Compile Include="..\..\Common\src\System\Xml\SecureStringHasher.cs" />
     <Compile Include="..\..\Common\src\System\Xml\XmlTextWriter.cs" />
