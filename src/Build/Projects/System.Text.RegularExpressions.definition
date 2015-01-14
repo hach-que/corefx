@@ -52,6 +52,9 @@
     <Compile Include="..\..\Common\src\System\NotImplemented.cs">
       <Link>System\NotImplemented.cs</Link>
     </Compile>
+    <Compile Include="..\..\Common\src\System\IO\StringBuilderCache.cs">
+      <Link>System\IO\StringBuilderCache.cs</Link>
+    </Compile>
     <EmbeddedResource Include="Resources\Strings.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
